@@ -1,0 +1,36 @@
+.giphy{
+  padding: 3rem 1rem 0;
+}
+
+.giphy h1{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.giphy .form{
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.giphy .form input{
+  width: 100%;
+  display: inline-block;
+  padding: 0.5rem;
+  border: 1px solid #666;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.image-container{
+  max-width: 400px;
+  margin: 0 auto;
+}
+.giphy-container img{
+  text-align: center;
+  width: 100%;
+}

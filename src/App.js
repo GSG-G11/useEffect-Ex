@@ -1,5 +1,6 @@
 import './App.css';
-import GiphyApi from './Components/GiphyApi';
+import RoboHash from './Components/RoboHash';
+// import GiphyApi from './Components/GiphyApi';
 // import SecondEx from './Components/SecondEx';
 // import Counter from './Components/Counter';
 
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       {/* <Counter /> */}
       {/* <SecondEx /> */}
-      <GiphyApi />
+      {/* <GiphyApi /> */}
+      <RoboHash />
     </div>
   );
 }

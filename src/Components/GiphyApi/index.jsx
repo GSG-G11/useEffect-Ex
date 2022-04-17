@@ -25,19 +25,29 @@ const GiphyApi = () => {
 
 
   return (
-    <div className="giphy">
+    <div className='giphy'>
       <h1>Giphy API</h1>
       <form className='form'>
-        <input type='text' placeholder='Search' value={search} onChange={(e) => setSearch(prev => e.target.value)} />
+        <input
+          type='text'
+          placeholder='Search'
+          value={search}
+          onChange={(e) => setSearch((prev) => e.target.value)}
+        />
       </form>
       <div className='giphy-container'>
-        {loading ? <h1>Loading...</h1> : giphy ? giphy.map((gif, index) => (
-          <img src={gif.images.fixed_height.url} alt='gif' key={index} />
-        )) : <p>No Results to</p>}
-
+        {loading ? (
+          <h1>Loading...</h1>
+        ) : giphy.length > 0 ? (
+          giphy.map((gif, index) => (
+            <img src={gif.images.fixed_height.url} alt='gif' key={index} />
+          ))
+        ) : (
+          <p>No Results to Show</p>
+        )}
       </div>
     </div>
-  )
+  );
 }
 
 export default GiphyApi;
