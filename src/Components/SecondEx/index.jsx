@@ -9,14 +9,20 @@ const SecondEx = () => {
 
   const halfDimension = window.innerWidth / 2;
 
+  const handleResize = (e) => {
+    setDimension({
+      x: e.clientX,
+      y: e.clientY
+    });
+  }
+
   useEffect(() => {
-    document.addEventListener('mousemove', (e) => {
-      setDimension({
-        x: e.clientX,
-        y: e.clientY
-      });
-    })
-  }, [])
+    document.addEventListener('mousemove', handleResize);
+
+    return () => {
+      document.removeEventListener('mousemove', handleResize);
+    }
+  })
 
   return (
     <div className="second" style={{backgroundColor: dimension.x > halfDimension ? 'tomato' : 'blue'}}>

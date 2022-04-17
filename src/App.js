@@ -1,12 +1,14 @@
 import './App.css';
-import SecondEx from './Components/SecondEx';
+import GiphyApi from './Components/GiphyApi';
+// import SecondEx from './Components/SecondEx';
 // import Counter from './Components/Counter';
 
 function App() {
   return (
     <div className="App">
       {/* <Counter /> */}
-      <SecondEx />
+      {/* <SecondEx /> */}
+      <GiphyApi />
     </div>
   );
 }
