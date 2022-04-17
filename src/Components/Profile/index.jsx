@@ -3,11 +3,9 @@ import './style.css';
 
 const Profile = () => {
   const [profile, setProfile] = useState({});
-  const [loading, setLoading] = useState(false);
   const [getData, setGetData] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
     const abortCtrl = new AbortController();
     const opts = { signal: abortCtrl.signal };
     const fetchData = async () => {
@@ -16,7 +14,6 @@ const Profile = () => {
       .catch(err => 'Error');
       
       setProfile(result.results[0]);
-      setLoading(false);
       setGetData(false);
     }
 
@@ -42,6 +39,21 @@ const Profile = () => {
             <header className='profile-header'>
               <div className="profile-image">
                 <img src={profile.picture.large} alt="profile" />
+              </div>
+              <div className="setting">
+                <button className="btn menu">
+                  <i className="ri-more-fill"></i>
+                </button>
+                <div className="actions">
+                  <button onClick={deleteHandler} className="btn">
+                    <i className="ri-delete-bin-fill"></i>
+                    Delete
+                  </button>
+                  <button  className="btn">
+                    <i className="ri-pencil-fill"></i>
+                    Edit
+                  </button>
+                </div>
               </div>
             </header>
             <main>
