@@ -1,10 +1,14 @@
 import './App.css';
-import Counter from './Components/Counter';
+import GiphyApi from './Components/GiphyApi';
+// import SecondEx from './Components/SecondEx';
+// import Counter from './Components/Counter';
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      {/* <Counter /> */}
+      {/* <SecondEx /> */}
+      <GiphyApi />
     </div>
   );
 }

@@ -7,7 +7,7 @@ const Counter = () => {
   useEffect(() => {
     document.addEventListener('mousedown', () => {
       setCount((prev) => prev + 1);
-    })
+    });
   }, [])
 
   return (

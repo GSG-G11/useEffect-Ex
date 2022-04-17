@@ -1,0 +1,39 @@
+.giphy{
+  padding: 3rem 1rem 0;
+}
+
+.giphy h1{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.giphy .form{
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.giphy .form input{
+  width: 100%;
+  display: inline-block;
+  padding: 0.5rem;
+  border: 1px solid #666;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.giphy-container{
+  columns: 250px 4;
+  padding: 1rem;
+  gap: 15px;
+}
+.giphy-container img{
+  margin: 0 .5rem 1rem;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 5px;
+}
